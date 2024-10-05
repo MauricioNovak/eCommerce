@@ -1,0 +1,102 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    display: grid;
+    grid-template-columns: 400px 1fr;
+    grid-template-rows: 100px 1fr 70px;
+    grid-template-areas: 
+    "nav nav"
+    "aside main"
+    "footer footer";
+    width: 100vw;
+    height: 100vh;
+}
+
+nav{
+    grid-area: nav;
+    background-color: black;
+    color: white;
+    text-align: center;
+    align-content: center;
+}
+
+aside{
+    grid-area: aside;
+    background-color: red;
+    color:white;
+}
+
+main{
+    grid-area: main;
+    background-color: white;
+    color: black;
+}
+
+footer{
+    grid-area: footer;
+    background-color: black;
+    color: white;
+    text-align: center;
+    align-content: center;
+}
+
+.asideContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.mainContainer{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(2,1fr);
+    margin: 20px;
+}
+
+.imgProductos{
+    width: 450px;
+    height: 400px;
+}
+
+.divContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    row-gap: 20px;
+    width: 450px;
+}
+
+button{
+    background-color: black;
+    color: white;
+    margin: 5px;
+    padding: 15px;
+    width: 450px;
+    font-weight: bold;
+    font-size: 20px;
+}
+button:hover{
+    background-color: red;
+}
+
+.bold{
+    font-weight: bold;
+}
+
+.largeSize{
+    font-size: 25px
+}
+
+.mediumSize{
+    font-size: 22px;
+}
+
+.iconMargin{
+    margin-top: 10px;
+}
